@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form Page </title>
+        <style>
+        h1{
+            color: red;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #info{
+            background-color: lightgray;
+        }
+        #colour{
+            background-color: lightblue;
+        }
+
+        #list{
+            background-color: lightgreen;
+        }
+        #button{
+            background-color: lightyellow;
+        }
+
+        button{
+            width: 100px;
+            height: 25px;
+            font-size: 15px;
+        }
+        button:hover{
+            background-color: orange;
+        }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1> Form </h1>
+
+        <form>
+            <div id = "info">
+                <br />
+                <input name = "name", type="text", placeholder="Name" /><br /><br />
+                <input name = "password" type = "password" placeholder="Password" /><br /><br />
+
+            </div>
+
+            <div id = "colour">
+                <br />
+                Favourite colour?<br />
+                <input name="color" type="radio" value="red"> Red   <br />
+                <input name="color" type="radio" value="green"> Green <br />
+                <input name="color" type="radio" value="blue"> Blue <br />
+
+            </div>
+
+            <div id = "list">
+                <br />
+                <input name="country" list="countries" placeholder="Country" />
+                <datalist id = "countries">
+                    <option value="India"></option>
+                    <option value="China"></option>
+                    <option value="USA"></option>
+                    <option value="England"></option>
+                    <option value="France"></option>
+                    <option value="Switzerland"></option>
+                    <option value="Belgium"></option>
+                    <option value="Italy"></option>
+                    <option value="Singapore"></option>
+                    <option value="Malaysia"></option>
+                </datalist><br /><br />
+            </div>
+
+        </form>
+        <div id="button">
+            <br />
+
+            <button type="button" name="button">Submit</button>
+
+            <br />
+            <br />
+
+        </div>
+
+
+
+            </body>
+</html>
