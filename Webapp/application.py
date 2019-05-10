@@ -17,8 +17,22 @@ def bye():
     return render_template("hello.html", headline=headline)
 #the above html file should be stored in a new directory called templates because flask searches for that directory and runs the app
 #the headline variable will exist inside html file
+@app.route("/names")
+def name():
+    names = ["Alice", "Raksha", "Bob", "Charlie"]
+    return render_template("index.html", names=names)
+###############################################################
+#Linking from one page to the other
 
+@app.route("/links")
+def links():
+    return render_template("links.html")
 
+@app.route("/more")
+def more():
+    return render_template("more.html")
+
+###############################################################
 @app.route("/hello")
 def index():
     return "Hello, World!!!"
