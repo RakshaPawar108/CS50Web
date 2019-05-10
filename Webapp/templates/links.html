@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Linking this route to the other </title>
+    </head>
+
+    <body>
+        <h2>Linking this route to the other</h2>
+
+        <p>
+            <blockquote>
+                "Because who would choose a daisy in a field of roses."
+            </blockquote>
+            <!-- The url_for is an inbuilt Jinja 2 function which will provide the url for the python function 'more' -->
+            <a href = "{{ url_for('more') }}"> See more...</a>
+        </p>
+    </body>
+</html>
