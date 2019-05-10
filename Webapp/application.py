@@ -32,6 +32,9 @@ def links():
 def more():
     return render_template("more.html")
 
+#also using inheritance as of Fri May10 7:53
+#check layout.html
+
 ###############################################################
 @app.route("/hello")
 def index():
