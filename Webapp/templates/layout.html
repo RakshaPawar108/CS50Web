@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Layout My Website! </title>
+
+        <style>
+            h1{
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            body{
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- we have given a space for heading variables to go in block heading -->
+        <h1>{% block heading %}{% endblock %}</h1>
+
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>
