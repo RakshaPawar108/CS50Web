@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" %}
 
-    <head>
-        <title>Came from the links route</title>
-    </head>
+{% block heading %}
 
-    <body>
+    Linking back to the links page
 
-        <h2> Linking back to the links page</h2>
+{% endblock %}
+
+{% block body %}
 
         <p>
             <blockquote>
@@ -16,5 +15,5 @@
 
             <a href="{{ url_for('links') }}"> Go back....</a>
         </p>
-    </body>
-</html>
+
+{% endblock %}
