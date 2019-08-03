@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Layout My Website! </title>
+        <title> {% block title %}{% endblock %} </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 
         <style>
-            h1{
+            h2{
                 text-align: center;
                 text-decoration: underline;
             }
@@ -17,10 +18,13 @@
 
     <body>
         <!-- we have given a space for heading variables to go in block heading -->
-        <h1>{% block heading %}{% endblock %}</h1>
+        <div class = "container">
 
-        {% block body %}
-        {% endblock %}
+            {% block body %}
+            {% endblock %}
+
+        </div>
+
 
     </body>
 </html>
